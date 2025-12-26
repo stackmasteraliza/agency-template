@@ -306,9 +306,10 @@ const ParallaxEffects = {
     init() {
         this.parallaxElements = document.querySelectorAll('.parallax-shape');
         this.floatingShapes = document.querySelectorAll('.shape');
+        this.scrollThrottled = false;
 
         if (this.parallaxElements.length > 0) {
-            window.addEventListener('scroll', () => this.handleScroll());
+            window.addEventListener('scroll', () => this.handleScroll(), { passive: true });
         }
 
         // Mouse parallax for hero section
@@ -316,12 +317,21 @@ const ParallaxEffects = {
     },
 
     handleScroll() {
-        const scrollY = window.scrollY;
+        // Throttle scroll events for better performance
+        if (!this.scrollThrottled) {
+            requestAnimationFrame(() => {
+                const scrollY = window.scrollY;
 
-        this.parallaxElements.forEach((el, index) => {
-            const speed = (index + 1) * 0.1;
-            el.style.transform = `translateY(${scrollY * speed}px)`;
-        });
+                this.parallaxElements.forEach((el, index) => {
+                    const speed = (index + 1) * 0.1;
+                    el.style.transform = `translateY(${scrollY * speed}px)`;
+                });
+
+                this.scrollThrottled = false;
+            });
+            this.scrollThrottled = true;
+        }
+    }
     },
 
     initMouseParallax() {
