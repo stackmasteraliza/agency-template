@@ -334,7 +334,6 @@ const ParallaxEffects = {
             });
             this.scrollThrottled = true;
         }
-    }
     },
 
     initMouseParallax() {
