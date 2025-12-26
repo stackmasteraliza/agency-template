@@ -1991,6 +1991,24 @@ section {
     }
 }
 
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 3%;
+    }
+
+    .hero-content {
+        gap: 3rem;
+    }
+
+    .hero-text {
+        flex: 1;
+    }
+
+    .hero-image {
+        flex: 0 0 auto;
+    }
+}
+
 @media (max-width: 480px) {
     section {
         padding: 4rem 0;
@@ -2032,5 +2050,23 @@ section {
     .client-logo {
         width: 80px;
         height: 40px;
+    }
+
+    /* Improve touch targets */
+    .nav-link {
+        padding: 1rem;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+
+    .btn {
+        min-height: 44px;
+        padding: 1rem 2rem;
+    }
+
+    .service-card,
+    .work-item {
+        min-height: 44px;
     }
 }
