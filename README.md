@@ -72,6 +72,12 @@ https://github.com/user-attachments/assets/preview.mp4
 2. Open `index.html` in your browser
 3. No build process required - just static files
 
+## Development
+
+- Edit `index.html` for structure changes
+- Modify `styles.css` for styling updates
+- Update `script.js` for animation and interaction changes
+
 ## File Structure
 
 ```
