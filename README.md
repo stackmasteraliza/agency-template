@@ -1,6 +1,8 @@
-# FoxyMoron - Creative Agency Website
+# FoxyMoron - Modern Creative Agency Template
 
-A modern, animated landing page for FoxyMoron, an award-winning creative agency. Built with HTML, CSS, and JavaScript featuring smooth animations, custom cursor effects, and a sleek dark theme design.
+Tired of dull, outdated website templates? This is a modern, fully responsive HTML template designed for creative agencies, startups, and businesses. A sleek, professional design that can transform your website and save hours of development time.
+
+Built with HTML, CSS, and JavaScript featuring smooth animations, custom cursor effects, and a sleek dark theme design.
 
 ## Preview
 
@@ -34,6 +36,10 @@ A modern, animated landing page for FoxyMoron, an award-winning creative agency.
 
 ## Features
 
+- ✅ **Fully Responsive & Mobile-Friendly** - Optimized for all device sizes with touch-friendly targets
+- ✅ **Clean, Modern Layout** - Perfect for agencies & portfolios
+- ✅ **Easy to Customize** - Adapt it for your brand in minutes
+- ✅ **Professional Look** - No messy code, just clean architecture
 - **Animated Preloader** - Stylish loading screen with progress bar
 - **Custom Cursor** - Interactive cursor with follower effect
 - **Hero Section** - Eye-catching hero with animated text and floating shapes
@@ -44,11 +50,12 @@ A modern, animated landing page for FoxyMoron, an award-winning creative agency.
 - **Team Section** - Leadership team profiles with social links
 - **Awards Marquee** - Auto-scrolling awards ticker
 - **Contact Form** - Elegant form with floating labels
-- **Responsive Design** - Optimized for all device sizes with touch-friendly targets
 - **Dark Theme** - Modern dark color scheme with pink accents
 - **Accessibility** - Keyboard navigation, ARIA labels, and screen reader support
 - **Performance** - Lazy loading images and optimized scroll events
 - **SEO Optimized** - Meta tags and semantic HTML structure
+
+💡 **Perfect for designers and developers who want to ditch ugly templates and create websites that actually impress clients.**
 
 ## Tech Stack
 
