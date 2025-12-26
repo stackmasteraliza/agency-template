@@ -174,8 +174,9 @@ const Navigation = {
     },
 
     toggleMenu() {
-        this.navToggle.classList.toggle('active');
+        const isActive = this.navToggle.classList.toggle('active');
         this.navMenu.classList.toggle('active');
+        this.navToggle.setAttribute('aria-expanded', isActive);
     },
 
     closeMenu() {

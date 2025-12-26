@@ -20,6 +20,9 @@
 </head>
 
 <body>
+    <!-- Skip to main content link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Preloader -->
     <div class="preloader">
         <div class="preloader-content">
@@ -40,16 +43,16 @@
 
     <!-- Navigation -->
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
             <div class="logo">
-                <a href="#">
+                <a href="#" aria-label="FoxyMoron home">
                     <span class="logo-main">FOXY</span><span class="logo-highlight">MORON</span>
                 </a>
             </div>
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
@@ -69,6 +72,7 @@
     </header>
 
     <!-- Hero Section -->
+    <main id="main-content">
     <section class="hero" id="home">
         <div class="hero-bg">
             <div class="gradient-overlay"></div>
@@ -708,6 +712,8 @@
             </div>
         </div>
     </section>
+
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
